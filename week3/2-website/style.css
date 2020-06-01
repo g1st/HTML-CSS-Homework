@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: 'Pacifico', sans-serif;
+  color: rgba(0, 0, 0, 0.87)
 }
 
 body {
@@ -92,24 +93,33 @@ a {
   display: flex;
 }
 
-.images {
-  border: 2px solid rgb(252, 251, 253);
-}
+/*----------  Hero section styles  ----------*/
 
-/* Footer styles */
-
-.footer {
+.hero {
+  min-height: 30rem;
+  background-image: url(images/Cakes/cupcakes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
-  padding: 50px;
   justify-content: center;
+  align-items: center;
 }
 
-.footer li {
-  padding-right: 50px;
-  font-size: 25px;
+.hero-content {
+  background: rgba(200, 200, 200, 0.7);
+  padding: 1rem 2rem;
 }
 
-/* Media queries */
+.hero-content>p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7)
+}
+
+.hero-content>h2 {
+  font-size: 3rem;
+  text-align: center;
+}
 
 /*----------  Media queries  ----------*/
 
@@ -130,7 +140,7 @@ a {
   .nav {
     display: flex;
     align-items: center;
-}
+  }
 
   .nav-list {
     display: flex;
@@ -150,10 +160,21 @@ a {
     font-size: 2.2rem;
   }
 
+  .hero {
+    min-height: 50rem;
   }
 
-@media screen and (min-width: 1200px) {
+  .hero-content>h2 {
+    font-size: 5rem;
+  }
 
+  .hero-content>p {
+    font-size: 2.6rem;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
   .brand-heading {
     font-size: 2.8rem;
   }
@@ -165,5 +186,13 @@ a {
   .nav-link {
     padding: 1rem 1.5rem;
     font-size: 2.8rem;
+  }
+
+  .hero-content>h2 {
+    font-size: 6rem;
+  }
+
+  .hero-content>p {
+    font-size: 3rem;
   }
 }
